@@ -1,55 +1,151 @@
-/* Add to styles_accueil.css */
-.menu-block {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Navigation */
+.menu-bar {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
 }
 
-.menu-item {
+.menu-bar img {
+    height: 50px;
+}
+
+.menu-bar nav ul {
     display: flex;
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.menu-item img {
-    width: 50%;
-    object-fit: cover;
+.menu-bar nav ul li {
+    margin: 0 15px;
 }
 
-.menu-item .text-block {
+.menu-bar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-bar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.cart-count {
+    font-size: 18px;
+}
+
+/* Content */
+.main-block, .menu-block, .contact-block, .contact-form-block {
     padding: 20px;
-    width: 50%;
+    margin: 20px 0;
+}
+
+.main-block .text-block, .offer-block, .menu-item .text-block, .contact-info, .map, .contact-form-block form {
+    padding: 20px;
     background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-block {
+.menu-block, .contact-block, .contact-form-block {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
 }
 
-.contact-info, .map {
-    width: 50%;
+.menu-item, .contact-block div, .contact-form-block img {
+    width: 48%;
 }
 
-.contact-form-block {
-    display: flex;
-    padding: 20px;
+.menu-item img, .contact-form-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.contact-form-block img {
-    width: 50%;
-    object-fit: cover;
+.menu-item .text-block, .contact-form-block form {
+    width: 48%;
 }
 
-.contact-form-block form {
-    width: 50%;
-    padding: 20px;
+.grey-bg {
+    background-color: #f0f0f0;
 }
 
+.white-bg {
+    background-color: #fff;
+}
+
+/* Modals */
 .modal {
     display: none;
     position: fixed;
@@ -59,8 +155,7 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
@@ -83,4 +178,14 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
