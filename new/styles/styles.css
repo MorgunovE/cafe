@@ -54,6 +54,11 @@ h2 {
     text-align: center;
     margin: 0 auto;
 }
+h3 {
+    font-size: 26px;
+    text-align: center;
+    margin: 0 auto;
+}
 
 p {
     color: #555;
@@ -195,7 +200,7 @@ img {
     }
 }
 
-.container_main-block .offer-block .btn_offer-block, .gallery_special-offer .card button {
+.container_main-block .offer-block .btn_offer-block, .gallery_special-offer .card button , .menu-block .card .order-btn {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -210,7 +215,7 @@ img {
     animation: iridescent 3s infinite;
 }
 
-.container_main-block .offer-block .btn_offer-block:hover, .gallery_special-offer .card button:hover {
+.container_main-block .offer-block .btn_offer-block:hover, .gallery_special-offer .card button:hover, .menu-block .card .order-btn:hover {
     transform: scale(1.05);
 }
 
@@ -287,30 +292,30 @@ img {
     font-weight: bold;
 }
 
-.menu-item .text-block, .contact-info, .map, .contact-form-block form {
+.contact-info, .map, .contact-form-block form {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.menu-block, .contact-block, .contact-form-block {
+.contact-block, .contact-form-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.menu-item, .contact-block div, .contact-form-block img {
+.contact-block div, .contact-form-block img {
     width: 48%;
 }
 
-.menu-item img, .contact-form-block img {
+ .contact-form-block img {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-.menu-item .text-block, .contact-form-block form {
+ .contact-form-block form {
     width: 48%;
 }
 
@@ -344,6 +349,39 @@ img {
 
 .white-bg {
     background-color: #fff;
+}
+
+.menu-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0 0 80px 0;
+}
+
+.menu-block .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    max-width: 560px;
+}
+
+.menu-block .card img {
+    width: 480px;
+    height: 480px;
+    border-radius: 10px;
+}
+
+.menu-block .card p {
+    margin: 10px 0;
+}
+
+.menu-block .card p:first-of-type,
+.menu-block .card p:last-of-type {
+    font-weight: bold;
+    font-size: 26px;
 }
 
 /* Modals */
