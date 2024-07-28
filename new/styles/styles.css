@@ -47,6 +47,13 @@ h1 {
 h2, h3 {
     color: #333;
 }
+h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    padding: 80px 0;
+    text-align: center;
+    margin: 0 auto;
+}
 
 p {
     color: #555;
@@ -123,11 +130,11 @@ img {
     margin: 80px 0 20px 0;
 }
 .main-block {
-    margin: 60px 0 20px 0;
+    padding: 60px 0 0 0;
     background: no-repeat center/cover url("/images/Bann2.jpg") ;
 }
 .container_main-block {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     min-height: 600px;
     display: flex;
     justify-content: space-between;
@@ -159,7 +166,6 @@ img {
     background: url("/images/coffee-cup.svg") no-repeat center/cover;
 }
 
-/* Add to new/styles/styles.css */
 .container_main-block .offer-block {
     display: flex;
     justify-content: center;
@@ -189,7 +195,7 @@ img {
     }
 }
 
-.container_main-block .offer-block .btn_offer-block {
+.container_main-block .offer-block .btn_offer-block, .gallery_special-offer .card button {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -204,7 +210,7 @@ img {
     animation: iridescent 3s infinite;
 }
 
-.container_main-block .offer-block .btn_offer-block:hover {
+.container_main-block .offer-block .btn_offer-block:hover, .gallery_special-offer .card button:hover {
     transform: scale(1.05);
 }
 
@@ -250,6 +256,37 @@ img {
 }
 
 
+.gallery_special-offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0 0 80px 0;
+}
+
+.gallery_special-offer .card {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    max-width: 560px;
+}
+
+.gallery_special-offer .card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gallery_special-offer .card p {
+    margin: 10px 0;
+}
+
+.gallery_special-offer .card p:first-of-type,
+.gallery_special-offer .card p:last-of-type {
+    font-weight: bold;
+}
+
 .menu-item .text-block, .contact-info, .map, .contact-form-block form {
     padding: 20px;
     background-color: white;
@@ -275,6 +312,30 @@ img {
 
 .menu-item .text-block, .contact-form-block form {
     width: 48%;
+}
+
+.live-music-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.live-music-block img {
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    height: auto;
+}
+
+.live-music-block img:hover {
+    transform: scale(1.06);
+    transition: transform 0.3s ease-in-out;
+}
+
+.live-music-block .text-block {
+    width: 60%;
+    padding: 0 60px;
 }
 
 .grey-bg {
