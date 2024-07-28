@@ -8,40 +8,53 @@
 </head>
 <body>
     <header>
-        <div class="menu-bar">
-            <img src="/images/bienvenue.jpg" alt="Logo">
-            <nav>
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#offre">Offre</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
-            </nav>
-            <div class="cart">
-                <span class="cart-icon">🛒</span>
-                <span class="cart-count">0</span>
+        <div class="container-menu">
+            <div class="menu-bar">
+                <a href="#accueil"><img src="/images/1.png" alt="Logo cafe"></a>
+                <nav>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#offre">Offre</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="cart">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count">0</span>
+                </div>
             </div>
         </div>
     </header>
     <main>
         <section id="accueil" class="main-block">
-            <div class="text-block">
-                <h1>Café</h1>
-                <ul>
-                    <li>Programme live</li>
-                    <li>Menu spécial</li>
-                    <li>Arôme incroyable</li>
-                </ul>
-            </div>
-            <div class="offer-block">
-                <div class="gallery">
-                    <img src="/images/promo1.jpg" alt="Offer 1">
-                    <img src="/images/promo2.jpg" alt="Offer 2">
-                    <img src="/images/promo3.JPG" alt="Offer 3">
+            <div class="container_main-block">
+                <div class="text-block">
+                    <h1>Café</h1>
+                    <p>Un endroit idéal pour rencontrer ceux qui vous sont chers.</p>
+                    <ul>
+                        <li>Programme live</li>
+                        <li>Menu spécial</li>
+                        <li>Arôme incroyable</li>
+                    </ul>
                 </div>
-                <p>Profitez de notre offre spéciale: Achetez un grand café glacé et obtenez une pâtisserie à moitié prix! Valable jusqu'au 31 août.</p>
-                <button class="order-btn">Commander</button>
+                <div class="offer-block">
+                    <div class="container_slider">
+                        <div class="gallery-slider">
+                            <div class="gallery_main-block">
+                                <img src="/images/promo1.jpg" alt="Offer 1">
+                                <img src="/images/promo2.jpg" alt="Offer 2">
+                                <img src="/images/promo3.JPG" alt="Offer 3">
+                            </div>
+                            <button class="prev-btn_main-block">&#10094;</button>
+                            <button class="next-btn_main-block">&#10095;</button>
+                        </div>
+                    </div>
+                    <p class="text_offer-block"><strong>Profitez de notre offre spéciale: </strong></p>
+                    <p class="text_offer-block">Achetez un grand café glacé et obtenez une pâtisserie à moitié prix! </p>
+                    <p class="text_offer-block">Valable jusqu'au 31 août.</p>
+                    <a href="#offre"><button class="btn_offer-block">Commander</button></a>
+                </div>
             </div>
         </section>
         <section id="liveMusic1" class="live-music-block grey-bg">
@@ -60,7 +73,7 @@
         </section>
         <section id="offre" class="special-offer-block white-bg">
             <h2>Offre Special</h2>
-            <div class="gallery">
+            <div class="gallery_special-offer">
                 <img src="/images/promo1.jpg" alt="Special 1">
                 <img src="/images/promo2.jpg" alt="Special 2">
                 <img src="/images/promo3.JPG" alt="Special 3">
