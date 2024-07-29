@@ -42,7 +42,7 @@ nav ul li a:hover {
 }
 h1 {
     color: #f0f0f0;
-    font-size: 46px;
+    font-size: 100px;
 }
 h2, h3 {
     color: #333;
@@ -130,7 +130,7 @@ img {
 }
 
 /* Content */
-.menu-block, .contact-block, .contact-form-block {
+.menu-block, .contact-form-block {
     padding: 20px;
     margin: 80px 0 20px 0;
 }
@@ -292,31 +292,24 @@ img {
     font-weight: bold;
 }
 
-.contact-info, .map, .contact-form-block form {
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.contact-block {
+    background: #ffffff;
 }
-
-.contact-block, .contact-form-block {
+.container_contact-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 40px;
 }
-
-.contact-block div, .contact-form-block img {
-    width: 48%;
-}
-
- .contact-form-block img {
-    width: 100%;
+.container_contact-block img {
+    width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     height: auto;
-    border-radius: 10px;
 }
-
- .contact-form-block form {
-    width: 48%;
+.container_contact-block img:hover {
+    transform: scale(1.06);
+    transition: transform 0.3s ease-in-out;
 }
 
 .live-music-block {
@@ -421,10 +414,10 @@ img {
 
 footer {
     background-color: #333;
-    color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 2px 0;
+    margin: 0 auto;
+}
+footer p {
+    color: white;
 }

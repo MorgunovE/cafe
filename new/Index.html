@@ -31,7 +31,7 @@
         <section id="accueil" class="main-block">
             <div class="container_main-block">
                 <div class="text-block">
-                    <h1>Café</h1>
+                    <h1>Café du Centre</h1>
                     <p>Un endroit idéal pour rencontrer ceux qui vous sont chers.</p>
                     <ul>
                         <li>Programme live</li>
@@ -166,42 +166,47 @@
                 </div>
             </div>
         </section>
-        <section id="contacts" class="contact-block grey-bg">
-            <div class="contact-info">
-                <h2>Contactes</h2>
-                <p>Adresse: 123 Rue du Café, Paris</p>
-                <p>Téléphone: +33 1 23 45 67 89</p>
-                <p>Email: contact@cafeducentre.fr</p>
+        <section id="contacts" class="contact-block">
+            <h2>Contactes</h2>
+            <div class="container_contact-block">
+                <div class="form">
+                    <form action="/submit-form" method="post">
+                        <div class="form-group">
+                            <label for="name">Nom:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Envoyer</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contactez-nous</h3>
+                    <p>Adresse:</p>
+                    <p>123 Rue du Café, Paris</p>
+                    <p>Téléphone:</p>
+                    <p> +33 1 23 45 67 89</p>
+                    <p>Email: </p>
+                    <p>contact@cafeducentre.fr</p>
+                </div>
+                <div class="map">
+                    <img src="/images/cofee_map.JPG" alt="Map">
+                </div>
             </div>
-            <div class="map">
-                <img src="/images/cofee_map.JPG" alt="Map">
-            </div>
-        </section>
-        <section id="contact-form" class="contact-form-block">
-            <img src="/images/menu-background.jfif" alt="Contact">
-            <form action="/submit-form" method="post">
-                <div class="form-group">
-                    <label for="name">Nom:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Téléphone:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Envoyer</button>
-            </form>
         </section>
 </main>
 <footer>
-    <p>© 2023 Café du Centre. Tous droits réservés.</p>
+    <p>© <strong>2024</strong> Café du Centre. Tous droits réservés.</p>
 </footer>
     <!-- Modals -->
     <div id="thank-you-modal" class="modal">
