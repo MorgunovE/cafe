@@ -86,7 +86,7 @@
                         <p>Profitez de notre offre spéciale:</p>
                         <p>Achetez un grand café glacé et obtenez une pâtisserie à moitié prix! </p>
                         <p>Valable jusqu'au 31 août.</p>
-                        <button id="special1-btn" class="order-btn">Commander</button>
+                        <button id="order7" class="order-btn">Commander</button>
                     </div>
                 </div>
                 <div class="card">
@@ -95,7 +95,7 @@
                         <p>Profitez de notre offre spéciale:</p>
                         <p>Achetez un grand café glacé et obtenez une pâtisserie à moitié prix! </p>
                         <p>Valable jusqu'au 31 août.</p>
-                        <button id="special2-btn" class="order-btn">Commander</button>
+                        <button id="order8" class="order-btn">Commander</button>
                     </div>
                 </div>
                 <div class="card">
@@ -104,7 +104,7 @@
                         <p>Profitez de notre offre spéciale:</p>
                         <p>Achetez un grand café glacé et obtenez une pâtisserie à moitié prix! </p>
                         <p>Valable jusqu'au 31 août.</p>
-                        <button id="special3-btn" class="order-btn">Commander</button>
+                        <button id="order9" class="order-btn">Commander</button>
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@
                         <p>Café</p>
                         <p>Un café noir riche et aromatique</p>
                         <p>3$</p>
-                        <button id="order1-btn" class="order-btn">Commander</button>
+                        <button id="order1" class="order-btn">Commander</button>
                     </div>
                 </div>
                 <div class="card">
@@ -128,7 +128,7 @@
                         <p>Thé</p>
                         <p>Thé vert ou noir, servi chaud</p>
                         <p>2.5$</p>
-                        <button id="order2-btn" class="order-btn">Commander</button>
+                        <button id="order2" class="order-btn">Commander</button>
                     </div>
                 </div>
                 <div class="card">
@@ -137,7 +137,7 @@
                         <p>Chocolat chaud</p>
                         <p>Chocolat riche et crémeux, servi chaud</p>
                         <p>3.5$</p>
-                        <button id="order3-btn" class="order-btn">Commander</button>
+                        <button id="order3" class="order-btn">Commander</button>
                     </div>
                 </div>
             </div>
@@ -149,7 +149,7 @@
                         <p>Croissant</p>
                         <p>Feuilleté et doré, parfait avec un café</p>
                         <p>1.5$</p>
-                        <button id="order4-btn" class="order-btn">Commander</button>
+                        <button id="order4" class="order-btn">Commander</button>
                     </div>
                 </div>
                 <div class="card">
@@ -158,7 +158,7 @@
                         <p>Tarte aux pommes</p>
                         <p>Tarte sucrée avec des pommes fraîches</p>
                         <p>3$</p>
-                        <button id="order5-btn" class="order-btn">Commander</button>
+                        <button id="order5" class="order-btn">Commander</button>
                     </div>
                 </div>
                 <div class="card">
@@ -167,7 +167,7 @@
                         <p>Muffin au chocolat</p>
                         <p>Muffin moelleux avec des pépites de chocolat</p>
                         <p>2.5$</p>
-                        <button id="order6-btn" class="order-btn">Commander</button>
+                        <button id="order6" class="order-btn">Commander</button>
                     </div>
                 </div>
             </div>
@@ -179,13 +179,13 @@
                     <h3>Formulaire de contact</h3>
                     <form action="/submit-form" method="post">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Nom et prénom :" required>
+                            <input type="text" id="name" name="name" placeholder="*Nom et prénom :" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="Téléphone :" required>
+                            <input type="tel" id="phone" name="phone" placeholder="*Téléphone :" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Email :" required>
+                            <input type="email" id="email" name="email" placeholder="*Email :" required>
                         </div>
                         <div class="form-group">
                             <textarea id="message" name="message" rows="4" placeholder="Message :"></textarea>
@@ -215,20 +215,26 @@
     <div id="thank-you-modal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <p>Merci pour votre message!</p>
+            <h3>Merci pour votre message!</h3>
+            <button class="return-btn">Retour</button>
         </div>
     </div>
     <div id="cart-modal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <p>Votre panier</p>
+            <h3>Votre panier</h3>
+            <div class="cart-modal">
+            </div>
+            <p class="total">Total: <span class="total-price"></span>$</p>
             <button class="pay-btn">Payer</button>
         </div>
     </div>
     <div id="payment-modal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <p>Merci pour votre commande!</p>
+            <h3>Merci pour votre commande!</h3>
+            <p>Votre commande vous sera envoyée prochainement. Si vous avez des questions, vous pouvez nous contacter par téléphone ou en utilisant le formulaire de contact.</p>
+            <button class="return-btn">Retour</button>
         </div>
     </div>
 
