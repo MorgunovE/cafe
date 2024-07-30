@@ -9,7 +9,7 @@ body {
 
 h1 {
     color: #f0f0f0;
-    font-size: 100px;
+    font-size: 60px;
 }
 h2, h3 {
     color: #333;
@@ -109,7 +109,7 @@ img {
 }
 .container_main-block {
     background: rgba(0, 0, 0, 0.6);
-    min-height: 880px;
+    min-height: 780px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,7 +125,7 @@ img {
 }
 .container_main-block .text-block p {
     color: #f0f0f0;
-    font-size: 30px;
+    font-size: 26px;
 }
 .container_main-block .text-block ul {
     list-style: none;
@@ -280,7 +280,7 @@ img {
 .form-card input {
     height: 20px;
     border: 1px solid #ccc;
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     padding: 10px;
 }
@@ -295,7 +295,7 @@ img {
 .form-card textarea {
     height: 100px;
     border: 1px solid #ccc;
-    width: 100%;
+    width: 90%;
     resize: none;
     border-radius: 10px;
     padding: 10px;
@@ -543,4 +543,108 @@ footer {
 }
 footer p {
     color: white;
+}
+
+@media (max-width: 1150px) {
+    body {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 28px;
+        padding: 60px 0;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .menu-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .menu-bar nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-bar nav ul li {
+        margin: 10px 0;
+    }
+
+    .cart-icon {
+        font-size: 20px;
+    }
+
+    .cart-count {
+        font-size: 16px;
+    }
+
+    .container_main-block {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .container_main-block .text-block {
+        padding: 20px;
+        font-size: 22px;
+    }
+
+    .container_main-block .text-block p {
+        font-size: 24px;
+    }
+
+    .container_main-block .offer-block {
+        padding: 20px;
+    }
+
+    .container_main-block .offer-block .text_offer-block {
+        padding: 0 10px;
+    }
+
+    .container_contact-block {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-card, .contact-info-card {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .live-music-block {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .live-music-block img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .live-music-block .text-block {
+        max-width: 100%;
+        padding: 20px 0;
+    }
+
+    .menu-block, .gallery_special-offer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-block .card, .gallery_special-offer .card {
+        max-width: 100%;
+    }
+
+    .modal-content {
+        margin: 10% auto;
+        padding: 20px;
+        max-width: 90%;
+    }
 }
