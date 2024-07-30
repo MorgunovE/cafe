@@ -36,7 +36,7 @@ nav ul li a:hover {
 
 .content {
     padding: 400px 0 0 0;
-    max-width: 1600px;
+    max-width: 1920px;
     margin: 0 auto;
     background: no-repeat top/100% url("/images/Bann1.jpg") ;
 }
@@ -65,9 +65,6 @@ nav ul li a:hover {
     height: auto;
     border-radius: 10px;
 }
-.contact-block_content {
-
-}
 
 h2, h3 {
     color: #333;
@@ -82,7 +79,7 @@ footer {
     background-color: #333;
     text-align: center;
     padding: 2px 0;
-    max-width: 1600px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 footer p {

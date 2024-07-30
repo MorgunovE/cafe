@@ -35,8 +35,8 @@ nav ul li a:hover {
 }
 
 .content {
-    padding: 0;
-    max-width: 1600px;
+    padding: 0 20px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -84,7 +84,7 @@ footer {
     background-color: #333;
     text-align: center;
     padding: 2px 0;
-    max-width: 1600px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 footer p {
