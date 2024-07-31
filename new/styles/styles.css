@@ -705,6 +705,13 @@ footer p {
         max-width: 100%; /* Maximum width */
         padding: 20px; /* Internal padding */
     }
+    .form-card input {
+        font-size: 18px; /* Font size */
+    }
+
+    .form-card textarea {
+        font-size: 18px; /* Font size */
+    }
 
     .live-music-block {
         flex-direction: column; /* Column layout */
