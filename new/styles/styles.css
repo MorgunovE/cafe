@@ -627,10 +627,6 @@ footer p {
 
 /* Media queries for responsive design */
 @media (max-width: 1150px) {
-    body {
-        padding: 0 10px; /* Internal padding */
-    }
-
     h1 {
         font-size: 80px; /* Font size */
     }
