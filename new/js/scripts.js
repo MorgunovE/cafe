@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Défilement fluide pour les liens de navigation
-    const navLinks = document.querySelectorAll('.menu-nav a, .menu-nav-mobile a, .menu-bar a');
+    const navLinks = document.querySelectorAll('.menu-nav a, .menu-nav-mobile a, .menu-bar a, .offer-block a');
 
     // Ajout d'un écouteur d'événements pour chaque lien de navigation
     navLinks.forEach(link => {
