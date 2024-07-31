@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Nouvelle Version</title>
+    <title>Café du Centre - Nouvelle Version</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+
     <header>
+        <!-- Conteneur principal du menu -->
         <div class="container-menu">
             <div class="menu-bar">
                 <a href="#accueil"><img src="/images/1.png" alt="Logo cafe"></a>
-                <nav>
+                <span class="menu-toggle">Menu</span>
+                <!-- Menu de navigation principal -->
+                <nav class="menu-nav">
                     <ul>
                         <li><a href="#accueil">Accueil</a></li>
                         <li><a href="#programme">Programme</a></li>
@@ -25,9 +29,21 @@
                     <span class="cart-count">0</span>
                 </div>
             </div>
+            <!-- Menu de navigation pour mobile -->
+            <nav class="menu-nav-mobile">
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#programme">Programme</a></li>
+                    <li><a href="#offre">Offre</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+
     <main>
+        <!-- Contenu principal de la page -->
         <section id="accueil" class="main-block">
             <div class="container_main-block">
                 <div class="text-block">
@@ -39,6 +55,7 @@
                         <li>Arôme incroyable</li>
                     </ul>
                 </div>
+                <!-- Carrousel d'images -->
                 <div class="offer-block">
                     <div class="container_slider">
                         <div class="gallery-slider">
@@ -58,6 +75,7 @@
                 </div>
             </div>
         </section>
+        <!-- Contenu Programme Live Music de la page -->
         <h2 id="programme">Programme Live Music</h2>
         <section id="liveMusic1" class="live-music-block white-bg" >
             <img src="/images/Raina-Rai.jpg" alt="Artist Raina-Rai">
@@ -77,6 +95,7 @@
             </div>
             <img src="/images/soiree.jpg" alt="Artist Soiree">
         </section>
+        <!-- Contenu Offre Special de la page -->
         <section id="offre" class="special-offer-block white-bg">
             <h2>Offre Special</h2>
             <div class="gallery_special-offer">
@@ -109,6 +128,7 @@
                 </div>
             </div>
         </section>
+        <!-- Contenu Menu de la page -->
         <section id="menu">
             <h2>Menu</h2>
             <h3>Boissons</h3>
@@ -172,6 +192,7 @@
                 </div>
             </div>
         </section>
+        <!-- Contenu Contacts de la page -->
         <section id="contacts" class="contact-block">
             <h2>Contactes</h2>
             <div class="container_contact-block">
@@ -208,17 +229,21 @@
             </div>
         </section>
 </main>
+
 <footer>
     <p>© <strong>2024</strong> Café du Centre. Tous droits réservés.</p>
 </footer>
     <!-- Modals -->
+
+    <!-- Modal Thank You -->
     <div id="thank-you-modal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content modal-content_center-mobile">
             <span class="close-btn">&times;</span>
             <h3>Merci pour votre message!</h3>
             <button class="return-btn">Retour</button>
         </div>
     </div>
+    <!-- Modal Order -->
     <div id="cart-modal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
@@ -229,15 +254,16 @@
             <button class="pay-btn">Payer</button>
         </div>
     </div>
+    <!-- Modal Payment -->
     <div id="payment-modal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content modal-content_center-mobile">
             <span class="close-btn">&times;</span>
             <h3>Merci pour votre commande!</h3>
             <p>Votre commande vous sera envoyée prochainement. Si vous avez des questions, vous pouvez nous contacter par téléphone ou en utilisant le formulaire de contact.</p>
             <button class="return-btn">Retour</button>
         </div>
     </div>
-
+    <!-- Scripts -->
     <script src="js/scripts.js"></script>
 </body>
 </html>
