@@ -54,6 +54,7 @@ img {
     background-color: #333; /* Couleur de fond */
     position: fixed; /* Position fixe */
     width: 100%; /* Largeur complète */
+    max-width: 1920px; /* Largeur maximale */
     top: 0; /* En haut de la page */
     z-index: 1000; /* Niveau de superposition */
 }
