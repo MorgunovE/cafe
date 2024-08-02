@@ -143,7 +143,7 @@ img {
 }
 .main-block {
     padding: 60px 0 0 0; /* Espacement interne */
-    background: no-repeat center/cover url("/images/Bann2.jpg"); /* Image de fond */
+    background: no-repeat center/cover url("../images/Bann2.jpg"); /* Image de fond */
 }
 
 .container_main-block {
@@ -181,7 +181,7 @@ img {
     content: ""; /* Contenu vide */
     display: inline-block; /* Affichage en ligne */
     margin-right: 5px; /* Marge à droite */
-    background: url("/images/coffee-cup.svg") no-repeat center/cover; /* Image de fond */
+    background: url("../images/coffee-cup.svg") no-repeat center/cover; /* Image de fond */
 }
 
 .container_main-block .offer-block {
@@ -390,22 +390,22 @@ img {
     margin: 0; /* Pas de marge */
 }
 .icon-clock::before {
-    content: url('/images/time-clock-icon.svg'); /* Icône d'horloge */
+    content: url('../images/time-clock-icon.svg'); /* Icône d'horloge */
     margin-right: 5px; /* Marge à droite */
 }
 
 .icon-address::before {
-    content: url('/images/location-sign.svg'); /* Icône d'adresse */
+    content: url('../images/location-sign.svg'); /* Icône d'adresse */
     margin-right: 5px; /* Marge à droite */
 }
 
 .icon-phone::before {
-    content: url('/images/phone-circle-fill.svg'); /* Icône de téléphone */
+    content: url('../images/phone-circle-fill.svg'); /* Icône de téléphone */
     margin-right: 5px; /* Marge à droite */
 }
 
 .icon-email::before {
-    content: url('/images/email.svg'); /* Icône d'email */
+    content: url('../images/email.svg'); /* Icône d'email */
     margin-right: 5px; /* Marge à droite */
 }
 
