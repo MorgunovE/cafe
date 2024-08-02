@@ -9,6 +9,9 @@ Evgenii Morgunov
 ## Dépôt GitHub
 [https://github.com/MorgunovE/cafe.git](https://github.com/MorgunovE/cafe.git)
 
+## GitHub Pages 
+https://morgunove.github.io/cafe/
+
 ## Structure du Projet
 Le projet est structuré comme suit :
 
