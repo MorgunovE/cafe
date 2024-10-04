@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function startSlideShow() {
         slideInterval = setInterval(() => {
             showSlide(currentIndex + 1);
-        }, 2000); // Change slide every 3 seconds
+        }, 2000); // Change slide every 2 seconds
     }
 
     // Arrêt du diaporama

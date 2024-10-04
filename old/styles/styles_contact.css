@@ -57,11 +57,12 @@ nav ul li a:hover {
     background-color: white;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     padding: 20px 40px;
     gap: 40px;
 }
 .contact-block img {
-    width: 25%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
 }
